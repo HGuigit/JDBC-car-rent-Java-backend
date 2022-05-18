@@ -93,12 +93,20 @@ public class CarroDAOImpl implements CarroDAO {
                     carro.setNome(res.getString(2));
                     carro.setAno(res.getInt(3));
                     carro.setQuilometragem(res.getDouble(4));
+                    carro.setPatrimonio(res.getInt(5));
+                    carro.setStatus(res.getString(6));
+                    carro.setMaxDiasLocacao(res.getInt(7));
+                    carro.setMarca(res.getString(8));
+                    carro.setQrCode(res.getString(9));
+                    carro.setIdCategoria(res.getInt(10));
                 }
                 
-            }catch{
-                
+            }catch(SQLException ex){
+                    System.out.println("Message " + ex);
             }
         }
+        
+        return carro;
     }
         
 }
