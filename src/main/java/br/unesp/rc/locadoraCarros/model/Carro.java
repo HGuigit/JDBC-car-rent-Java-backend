@@ -92,7 +92,7 @@ public class Carro {
         return this.qrCode;
     }
     
-    public void setQrCode(){
+    public void setQrCode(String qrCode){
         this.qrCode = qrCode;
     }
     
