@@ -9,35 +9,44 @@ import br.unesp.rc.locadoraCarros.model.Carro;
 import br.unesp.rc.locadoraCarros.service.CarroService;
 import br.unesp.rc.locadoraCarros.service.ServiceFactory;
 
-
 /**
  *
  * @author guilh
  */
-public class Demo {
+public class InsertMethods {
     
-    public static void main(String[] args) {
+    
+    public static void insertExampleCar(){
         
+        // Definir a placa
         final String placa = "AVW-034";
-        
+
         CarroService cs = ServiceFactory.getCarroService();
+    
         
         /*
-        Consultar um carro pela placa
+        Gerar uma instância persistida
         */
-        
-        Carro c = cs.findCar(placa);
-        
-        if(c == null){
-           InsertMethods.insertExampleCategory();
-           InsertMethods.insertExampleCar();
-        } else{
-            System.out.println("Carro não encontrado! Não faça nada!");
-        }
-        
-        
+            
+        Carro carro = InstanceGenerator.getCarro(placa);
+            
+        System.out.println(carro);
+            
+        /*
+        Persistir objeto no banco de dados
+        */
+            
+        boolean result =  cs.save(carro);
+        System.out.println("Result: " + result);
+            
+    }
+    
+    
+    public static void insertExampleCategory(){
         
     }
+    
+    
     
     
     

@@ -23,9 +23,8 @@ public class InstanceGenerator {
         c.setPlaca(placa);
         c.setAno(2008);
         c.setMarca("Chevrolet");
-        c.setIdCategoria(1);
         c.setQrCode("23124523523423");
-        c.setPatrimonio(20000);
+        c.setPatrimonio(100);
         c.setMaxDiasLocacao(12);
         c.setQuilometragem(2000);
         c.setStatus("Alugado");
