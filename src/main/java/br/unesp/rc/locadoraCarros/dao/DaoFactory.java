@@ -17,4 +17,8 @@ public class DaoFactory {
         return new CarroDAOImpl();
     }
     
+    public static CategoriaDAO getCategoriaDao(){
+        return new CategoriaDAOImpl();
+    }
+    
 }
