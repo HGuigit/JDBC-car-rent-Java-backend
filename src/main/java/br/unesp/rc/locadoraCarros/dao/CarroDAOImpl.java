@@ -87,6 +87,7 @@ public class CarroDAOImpl implements CarroDAO {
                 pstm.setString(1, placa);
                 res = pstm.executeQuery();
                 
+                // Recuperação do objeto
                 while(res.next()){
                     carro = new Carro();
                     carro.setPlaca(res.getString(1));
