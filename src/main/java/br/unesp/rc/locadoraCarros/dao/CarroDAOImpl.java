@@ -18,7 +18,7 @@ import java.sql.SQLException;
  */
 public class CarroDAOImpl implements CarroDAO {
     
-    public CarroDaoImpl(){
+    public CarroDAOImpl(){
     }
     
     @Override
