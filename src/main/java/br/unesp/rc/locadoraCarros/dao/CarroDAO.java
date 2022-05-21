@@ -14,7 +14,7 @@ public interface CarroDAO {
     
     final String INSERT_CARRO = "INSERT INTO carro VALUES (?, ?, ?, ?, ?, ?, ?, ?, ? ,?)";
     
-    final String FIND_CARRO_PLACA = "SELECT * FROM carro WHERE placa='?'";
+    final String FIND_CARRO_PLACA = "SELECT * FROM carro WHERE placa = ? ";
     
     public boolean save(Carro carro);
     

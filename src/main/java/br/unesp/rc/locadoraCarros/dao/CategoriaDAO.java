@@ -14,7 +14,7 @@ public interface CategoriaDAO {
     
     final String INSERT_CATEGORIA = "INSERT INTO categoria VALUES (?, ?, ?, ?)";
     
-    final String FIND_CATEGORIA_ID = "SELECT * FROM carro WHERE idCategoria='?'";
+    final String FIND_CATEGORIA_ID = "SELECT * FROM carro WHERE idCategoria = ? ";
     
     public boolean save(Categoria categoria);
     

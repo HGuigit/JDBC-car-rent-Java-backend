@@ -11,6 +11,6 @@ package br.unesp.rc.locadoraCarros.utils;
 public interface IMySql {
     final String USUARIO = "root";
     final String SENHA = "123";
-    final String URL = "jdbc:mysql://localhost:3306/locadoracarros-grupo1";
+    final String URL = "jdbc:mysql://localhost/locadoracarros-grupo1?useLegacyDatetimeCode=false&serverTimezone=UTC";
     final String DRIVER_NAME = "com.mysql.cj.jdbc.Driver";
 }
